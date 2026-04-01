@@ -3,16 +3,11 @@
 int main() 
 {
     char opcao;
-     printf("Escolha qual categoria CNH vc tem:\n");
-     printf("Categoria A:\n ");
-     printf("Categoria B:\n ");
-     printf("Categoria C:\n ");
-     printf("Categoria D:\n ");
-     printf("Categoria E:\n ");
-     scanf("%c ",&opcao);
+     printf("Escolha qual categoria CNH vc tem (A,B,C,D ou E):\n");
+     scanf("%c",&opcao);
      opcao=toupper(opcao);
      switch(opcao)
-{    
+    {	
         case 'A':
                 printf("Veículo permitido: Moto\n");
                 break;
@@ -29,10 +24,10 @@ int main()
                 printf("Veículo permitido: Carreta\n");
                 break;
                 
-        default:
-                
+       default:
+               
                 printf("Você não tem essa CNH!!!\n");
-                
-}        
+     }  
+      
         return 0;        
-    }
+}    
