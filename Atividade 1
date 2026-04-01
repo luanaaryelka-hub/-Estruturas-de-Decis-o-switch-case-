@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <ctype.h>
+int main() 
+{
+    char opcao;
+     printf("Escolha qual categoria CNH vc tem:\n");
+     printf("Categoria A:\n ");
+     printf("Categoria B:\n ");
+     printf("Categoria C:\n ");
+     printf("Categoria D:\n ");
+     printf("Categoria E:\n ");
+     scanf("%c ",&opcao);
+     opcao=toupper(opcao);
+     switch(opcao)
+{    
+        case 'A':
+                printf("Veículo permitido: Moto\n");
+                break;
+        case 'B':  
+                printf("Veículo permitido: Carro\n");
+                break;
+        case 'C':
+                printf("Veículo permitido: Caminhão\n");
+                break;
+        case 'D':
+                printf("Veículo permitido: Ônibus\n");
+                break;
+        case 'E':
+                printf("Veículo permitido: Carreta\n");
+                break;
+                
+        default:
+                
+                printf("Você não tem essa CNH!!!\n");
+                
+}        
+        return 0;        
+    }
